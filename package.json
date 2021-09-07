@@ -2,6 +2,7 @@
   "name": "frases",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://gisellea198.github.io/frases",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
     "@fortawesome/free-brands-svg-icons": "^5.15.4",
@@ -24,6 +25,8 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
